@@ -31,9 +31,9 @@
     </nav>
     <div class="sidebar-widgets">
         <div class="sidebar-widget">
-            <i class="icon icofont-hour-glass text-primary"></i>
+            <i class="icon icofont-hour-glass text-success"></i>
             <div class="info">
-                <span class="main text-primary"
+                <span class="main text-success"
                     <?= $activeClock === 'workedInterval' ? 'active-clock' : '' ?>>
                     <?= $workedInterval ?>
                 </span>
