@@ -5,6 +5,8 @@ class User extends Model {
         'name',
         'password',
         'email',
+        'cpf',
+        'rg',
         'start_date',
         'end_date',
         'is_admin'

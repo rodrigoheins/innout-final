@@ -33,6 +33,26 @@
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Informe o cpf"
+                    class="form-control <?= $errors['cpf'] ? 'is-invalid' : '' ?>"
+                    value="<?= $cpf ?>">
+                <div class="invalid-feedback">
+                    <?= $errors['cpf'] ?>
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="rg">RG</label>
+                <input type="text" id="rg" name="rg" placeholder="Informe o rg"
+                    class="form-control <?= $errors['rg'] ? 'is-invalid' : '' ?>"
+                    value="<?= $rg ?>">
+                <div class="invalid-feedback">
+                    <?= $errors['rg'] ?>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" placeholder="Informe a senha"
                     class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>">

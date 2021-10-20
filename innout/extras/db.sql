@@ -6,6 +6,8 @@ CREATE TABLE users (
     name VARCHAR(100) NOT NULL,
     password VARCHAR(100) NOT NULL,
     email VARCHAR(50) UNIQUE NOT NULL,
+    cpf VARCHAR(45),
+    rg VARCHAR(45),
     start_date DATE NOT NULL,
     end_date DATE,
     is_admin BOOLEAN NOT NULL DEFAULT false
@@ -26,7 +28,7 @@ CREATE TABLE working_hours (
 
 -- Essa senha criptografada corresponde ao valor "a"
 INSERT INTO users (id, name, password, email, start_date, end_date, is_admin)
-VALUES (1, 'Admin', '$2y$10$/vC1UKrEJQUZLN2iM3U9re/4DQP74sXCOVXlYXe/j9zuv1/MHD4o.', 'admin@cod3r.com.br', '2000-1-1', null, 1);
+VALUES (1, 'Admin', '$2y$10$/vC1UKrEJQUZLN2iM3U9re/4DQP74sXCOVXlYXe/j9zuv1/MHD4o.', '551.457.620-54', '15.105.486-1', 'admin@cod3r.com.br', '2000-1-1', null, 1);
 
 INSERT INTO users (id, name, password, email, start_date, end_date, is_admin)
 VALUES (2, 'Chaves', '$2y$10$/vC1UKrEJQUZLN2iM3U9re/4DQP74sXCOVXlYXe/j9zuv1/MHD4o.', 'chaves@cod3r.com.br', '2000-1-1', null, 1);
